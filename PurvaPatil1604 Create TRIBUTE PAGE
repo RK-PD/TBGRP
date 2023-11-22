@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admiration Page</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        
+        main {
+            margin: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admiration Page</h1>
+    </header>
+    
+    <main>
+        <h2>About {Person's Name}</h2>
+        <img src="{Image URL}" alt="{Person's Name}">
+        <p>{Person's Name} is an incredible individual who possesses numerous admirable qualities. Their dedication, perseverance, and kindness inspire me every day. They have achieved great success in their field and continue to make a positive impact on the lives of others.</p>
+        
+        <h2>Qualities I Admire</h2>
+        <ul>
+            <li>{Admirable Quality 1}</li>
+            <li>{Admirable Quality 2}</li>
+            <li>{Admirable Quality 3}</li>
+        </ul>
+        
+        <h2>Why I Admire {Person's Name}</h2>
+        <p>I admire {Person's Name} because they consistently demonstrate integrity and humility. They are always willing to help others and go above and beyond to make a difference. Their passion and drive are contagious, and they serve as a role model for me and many others.</p>
+    </main>
+</body>
+</html>
+
+
+css code:
+/* CSS code for a webpage dedicated to someone you admire */
+
+/* Set the background color */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Style the header */
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  color: #333333;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Style the paragraph */
+p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.5;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/* Style the image */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the link */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
