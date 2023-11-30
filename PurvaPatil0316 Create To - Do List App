@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .pink-yellow-gradient {
+      background: linear-gradient(to right, pink, yellow);
+    }
+    .geo-horizontal-line {
+      border-bottom: 1px solid black;
+      transform: rotate(-45deg);
+      width: 100%;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Create a New List</h2>
+        <form>
+          <div class="form-group">
+            <label for="listName">List Name</label>
+            <input type="text" class="form-control" id="listName" placeholder="Enter list name">
+          </div>
+          <button type="submit" class="btn btn-primary">Create List</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2>Existing Lists</h2>
+        <ul class="list-group">
+          <li class="list-group-item">List 1</li>
+          <li class="list-group-item">List 2</li>
+          <li class="list-group-item">List 3</li>
+        </ul>
+      </div>
+    </div>
+    <div class="geo-horizontal-line"></div>
+    <h2>Add Tasks to a List</h2>
+    <form>
+      <div class="form-group">
+        <label for="taskName">Task Name</label>
+        <input type="text" class="form-control" id="taskName" placeholder="Enter task name">
+      </div>
+      <button type="submit" class="btn btn-primary">Add Task</button>
+    </form>
+    <div class="geo-horizontal-line"></div>
+    <h2>Tasks in List</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Task 1</li>
+      <li class="list-group-item">Task 2</li>
+      <li class="list-group-item">Task 3</li>
+    </ul>
+  </div>
+</body>
+</html>
+
+
+<div id="todo-list">
+  <h2>My To-Do List</h2>
+  <ul id="tasks"></ul>
+  <input type="text" id="task-input" placeholder="Add a task">
+  <button id="add-task">Add Task</button>
+</div>
+
+
+
+#todo-list {
+  background: linear-gradient(to right, pink, yellow);
+  padding: 20px;
+}
+
+#todo-list h2 {
+  text-align: center;
+}
+
+#tasks {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tasks li {
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: 20px 0;
+}
+
+
+const taskInput = document.getElementById('task-input');
+const addTaskButton = document.getElementById('add-task');
+const tasksList = document.getElementById('tasks');
+
+addTaskButton.addEventListener('click', () => {
+  const taskText = taskInput.value;
+  if (taskText) {
+    const taskItem = document.createElement('li');
+    taskItem.textContent = taskText;
+    tasksList.appendChild(taskItem);
+    taskInput.value = '';
+  }
+});
+
+tasksList.addEventListener('click', (event) => {
+  if (event.target.tagName === 'LI') {
+    event.target.remove();
+  }
+});
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <!-- To-Do List HTML code goes here -->
+    </div>
+  </div>
+</div>
+
