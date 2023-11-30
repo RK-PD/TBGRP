@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#social-media">Social Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Add your project details here -->
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <!-- Add your skills here -->
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <!-- Add your work experience here -->
+    </section>
+
+    <section id="social-media">
+      <h2>Social Media</h2>
+      <!-- Add links to your social media profiles here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2022 My Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+/* styles.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+}
+
+/* Projects Section Styles */
+#projects {
+  padding: 50px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Skills Section Styles */
+#skills {
+  background-color: #f4f4f4;
+  padding: 50px;
+}
+
+/* Experience Section Styles */
+#experience {
+  padding: 50px;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  margin-top: 0;
+}
+
+/* Contact Section Styles */
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+//javascript
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
