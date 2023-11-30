@@ -1,0 +1,222 @@
+<!html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Development Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Logo">
+      <h1>Your Name</h1>
+      <p>Web Developer</p>
+    </header>
+    <section id="about">
+      <img src="profile.jpg" alt="Profile Picture">
+      <h2>About Me</h2>
+      <p>Write a short bio highlighting your skills and experience.</p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Description of Project 2</p>
+      </div>
+    </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Download my <a href="resume.pdf" download>resume</a>.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <ul>
+        <li>Email: yourname@email.com</li>
+        <li>Phone: 123-456-7890</li>
+      </ul>
+    </section>
+    <footer>
+      <p>&copy; 2021 Your Name. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
+
+
+/*css*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #fff;
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+#skills ul {
+  list-style: none;
+  text-align: center;
+}
+
+#skills li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+#resume p {
+  text-align: center;
+}
+
+#resume a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#resume a:hover {
+  color: #ccc;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #fff;
+}
+
+#contact ul {
+  list-style: none;
+  text-align: center;
+}
+
+#contact li {
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+}
+
+footer li {
+  margin-right: 20px;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+
