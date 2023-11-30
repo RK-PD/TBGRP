@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Quiz Application</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Web Quiz Application</h1>
+  
+  <div id="quiz">
+    <h2>Question 1</h2>
+    <ul>
+      <li><input type="radio" name="q1" value="a"> Option A</li>
+      <li><input type="radio" name="q1" value="b"> Option B</li>
+      <li><input type="radio" name="q1" value="c"> Option C</li>
+      <li><input type="radio" name="q1" value="d"> Option D</li>
+    </ul>
+  </div>
+  
+  <div id="quiz">
+    <h2>Question 2</h2>
+    <ul>
+      <li><input type="radio" name="q2" value="a"> Option A</li>
+      <li><input type="radio" name="q2" value="b"> Option B</li>
+      <li><input type="radio" name="q2" value="c"> Option C</li>
+      <li><input type="radio" name="q2" value="d"> Option D</li>
+    </ul>
+  </div>
+  
+  <button onclick="calculateScore()">Submit</button>
+  
+  <div id="result"></div>
+  
+</body>
+</html>
+
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#quiz {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+#result {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+// script.js
+
+function calculateScore() {
+  var score = 0;
+  
+  var q1 = document.querySelector('input[name="q1"]:checked');
+  var q2 = document.querySelector('input[name="q2"]:checked');
+  
+  if (q1 && q2) {
+    if (q1.value === 'a') {
+      score++;
+    }
+    
+    if (q2.value === 'b') {
+      score++;
+    }
+    
+    document.getElementById('result').innerHTML = 'Your score: ' + score;
+  } else {
+    alert('Please answer all questions.');
+  }
+}
